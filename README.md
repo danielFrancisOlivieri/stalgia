@@ -1,2 +1,2 @@
-# shakeSpot
-Helps you search through all of Shakespeare's plays using xml
+# stalgia
+This lets users input memories and stores those memories in cookies so they can be accessed later
