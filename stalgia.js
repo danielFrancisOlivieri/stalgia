@@ -1,12 +1,16 @@
 
 $(document).ready(function(){
 
+
+//$('textarea').autoResize();
+
 console.log("spurk");
-var text, value;
+var text, value, anEmail;
 
 value = $("#userText").val();
 
 text = $("#userText").text();
+
 
 console.log("value" + value);
 
@@ -17,8 +21,22 @@ console.log("text" + text);
 $("#submitButton").click(function(){
   value = $("#userText").val();
   text = $("#userText").text();
+
+  title = $("#titleInput").val();
+
+  anEmail = $("#email").val();
+
+  console.log (value);
+  console.log (text);
+  console.log (title);
+  console.log(anEmail);
   console.log("**********************");
-emailjs.send("gmail","rick",{our_name: "Daniel", theMessage: value})
+
+  if (title.length < 1)
+  {
+    title = "Memory";
+  }
+emailjs.send("gmail","official",{memoryTitle: title, message: value, email: anEmail})
 .then(function(response) {
    console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
 }, function(err) {
