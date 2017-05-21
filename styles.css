@@ -1,73 +1,91 @@
-p
-{
-
-color: red;
-
-}
-
-
-body
-
-{
-
-	background-image: url("https://ih0.redbubble.net/image.208539322.1699/flat,800x800,075,f.jpg");
-}
-
-
-li{
-  z-index: 6;
-}
-section
-{
-  z-index: -1;
-}
-li
-{
-  text-align: left;
-  margin-left: 50%;
-  font-size: 20px;
-  color: black;
-}
-h2
-{
-  margin-left: auto;
-}
-#one
-{
-
-  height: auto;
-
-}
-p{
-
-color: red;
-}
-
-input, select
+input, select, textarea
 {
     width:45%;
      padding:10px;
      border-radius:3px;
      border:0px;
      background-color: white;
-     color: black;
+     color: #857e7e;
+     display: inline-block;
+
        }
 
-	#ourText
-{
-background-color: white;
+       html, body {
+          height: 100%;
+          margin: 0;
+      }
+
+      #wrapper {
+          min-height: 100%;
+      }
+
+ body {
+           font: 20px Montserrat, sans-serif;
+           line-height: 1.8;
+           color: #f5f6f7;
+           background-color: #ff6f69;
+
+       }
+       p {font-size: 16px;}
+       .margin {margin-bottom: 45px;}
+       .bg-1 {
+           background-color: #1abc9c; /* Green */
+           color: #ffffff;
+       }
+       .bg-2 {
+           background-color: #474e5d; /* Dark Blue */
+           color: #ffffff;
+       }
+       .bg-3 {
+           background-color: #ffffff; /* White */
+           color: #555555;
+       }
+       .bg-4 {
+           background-color: #2f2f2f; /* Black Gray */
+           color: #fff;
+       }
+       .container-fluid {
+           padding-top: 70px;
+           padding-bottom: 70px;
+       }
+       .navbar {
+           padding-top: 15px;
+           padding-bottom: 15px;
+           border: 0;
+           border-radius: 0;
+           margin-bottom: 0;
+           font-size: 12px;
+           letter-spacing: 5px;
+       }
+       .navbar-nav  li a:hover {
+           color: #ffcc5c !important;
+       }
+
+       #main {
+         background-color: #ff6f69;
+         height: 100%;
+       }
+
+
+.myButton {
+background-color:#7892c2;
+-moz-border-radius:28px;
+-webkit-border-radius:28px;
+border-radius:28px;
+border:1px solid #4e6096;
+display:inline-block;
+cursor:pointer;
+color:#ffffff;
+font-family:Arial;
+font-size:17px;
+padding:16px 31px;
+text-decoration:none;
+text-shadow:0px 1px 0px #283966;
 }
-
-h1
-
-{
-  color: white;
+.myButton:hover {
+background-color:#476e9e;
 }
-
-.sectionOfPlay
-{
-
-border-style: dashed;
-border-color: black;
-
+.myButton:active {
+position:relative;
+top:1px;
 }
